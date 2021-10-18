@@ -208,8 +208,6 @@ allowPodLaunching: true
 
 # Environment variables for all airflow containers
 env: []
-# - name: ""
-#   value: ""
 
 # Secrets for all airflow containers
 secret: []
@@ -1362,9 +1360,9 @@ dags:
 logs:
   persistence:
     # Enable persistent volume for storing logs
-    enabled: false
+    enabled: true
     # Volume size for logs
-    size: 100Gi
+    size: 5Gi
     # If using a custom storageClass, pass name here
     storageClassName:
     ## the name of an existing PVC to use
